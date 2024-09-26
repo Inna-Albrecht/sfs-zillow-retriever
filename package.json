@@ -1,0 +1,14 @@
+{
+  "name": "sfs-zillow-retriever",
+  "version": "1.0.0",
+  "description": "",
+  "main": "puppet.js",
+  "scripts": {
+    "test": "tets"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0"
+  }
+}
