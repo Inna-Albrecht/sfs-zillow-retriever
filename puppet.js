@@ -5,7 +5,7 @@ export const handler = async (event, context) => {
         args: chromium.args,
         defaultViewport: chromium.defaultViewport,
         executablePath: await chromium.executablePath,
-        headless: chromium.headless,
+        //headless: chromium.headless,
     })
 
     const page = await browser.newPage()
@@ -37,6 +37,6 @@ export const handler = async (event, context) => {
         await browser.close()
     }
 
-
-
 }
+
+handler()
