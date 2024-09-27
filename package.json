@@ -1,12 +1,13 @@
 {
   "name": "sfs-zillow-retriever",
   "version": "1.0.0",
-  "description": "",
+  "description": "A script to retrieve data from Zillow",
   "main": "puppet.js",
+  "type": "module",
   "scripts": {
-    "test": "tets"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0"

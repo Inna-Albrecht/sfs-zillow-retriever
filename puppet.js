@@ -21,7 +21,7 @@ export const handler = async (event, context) => {
             'span.Text-c11n-8-99-3__sc-aiai24-0.dFhjAe span',
             el => el.innerText
         );
-
+        console.log('%cpuppet.js:24 zestimate', 'color: #007acc;', zestimate);
         return {
             statuscode: 200,
             body: JSON.stringify({ message: zestimate })
