@@ -52,16 +52,3 @@ export const handler = async (event, context) => {
     await browser.close();
   }
 };
-
-// Testing locally
-const event = {
-  queryStringParameters: {
-    url: 'https://www.zillow.com/homedetails/1304-Nueces-Ct-Benbrook-TX-76126/29131088_zpid/'
-  }
-};
-
-handler(event).then(response => {
-  console.log('Response:', response);
-}).catch(error => {
-  console.error('Handler Error:', error);
-});
