@@ -20,6 +20,13 @@ app.post('/scrape', async (req, res) => {
     return res.status(400).json({ error: 'URL is required' });
   }
 
+  /**
+   * Event object containing query string parameters.
+   * 
+   * @typedef {Object} Event
+   * @property {Object} queryStringParameters - The query string parameters.
+   * @property {string} queryStringParameters.url - The URL parameter.
+  */
   const event = {
     queryStringParameters: {
       url: `${url}`
