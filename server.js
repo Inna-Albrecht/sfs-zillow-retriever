@@ -3,14 +3,12 @@ import { handler } from './puppet.js';
 
 const app = express();
 
-// Middleware to parse JSON bodies (this must come first)
 app.use(express.json()); 
 
-// Middleware to log incoming requests
 app.use((req, res, next) => {
   console.log(`Received ${req.method} request for ${req.url}`);
-  console.log('Request Body:', req.body); // Log the request body after it's parsed
-  next(); // Pass control to the next middleware or route handler
+  console.log('Request Body:', req.body); 
+  next(); 
 });
 
 app.post('/scrape', async (req, res) => {
